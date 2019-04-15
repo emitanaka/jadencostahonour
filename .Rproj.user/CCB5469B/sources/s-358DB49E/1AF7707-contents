@@ -1,0 +1,7 @@
+library(ggplot2)
+library(plotly)
+ggplot(cars, aes(dist, speed)) + geom_point() + theme(panel.grid.major = element_line(colour = "khaki4"), 
+    panel.background = element_rect(fill = "hotpink2"))
+
+ggplot(cars, aes(dist, speed)) + geom_point()
+ggplotly()
